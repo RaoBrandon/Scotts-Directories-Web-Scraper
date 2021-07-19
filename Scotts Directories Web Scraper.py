@@ -18,7 +18,7 @@ class Scraper:
                                    "Geocoded By:", "Fax:", "Web Site:", "Census Division:", "Executives:", "NAICS:",
                                    "Business Types:", "Products:", "Exporter (Y/N):", "Location Address:",
                                    "Parent Company:"]
-        self.new_file = open('bruh.csv', 'w', newline='')
+        self.new_file = open('extract.csv', 'w', newline='')
         self.csv_writer = csv.writer(self.new_file)
         self.csv_writer.writerow(self.tracked_parameters)
         # we initialize our driver with options, making it so that we open the chrome window in our signed in state
